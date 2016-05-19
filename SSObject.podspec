@@ -15,12 +15,12 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "SSObject”
-  s.version      = “0.0.1”
-  s.summary      = “Reflection object.”
+  s.name         = "SSObject"
+  s.version      = "0.0.1"
+  s.summary      = "A short description of SSObject."
 
   s.description  = <<-DESC
-                   A longer description of SSCommon-Utilities in Markdown format.
+                   A longer description of SSObject in Markdown format.
 
                    * Think: Why did you write this? What is the focus? What does it do?
                    * CocoaPods will be using this to generate tags, and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
                    * Finally, don't worry about the indent, CocoaPods strips it!
                    DESC
 
-  s.homepage     = "https://github.com/Seven-Sun/SSObject/“
+  s.homepage     = "https://github.com/Seven-Sun/SSObject"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -53,7 +53,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "SevenChan" => "sun.chao@allgateways.com" }
+  s.author             = { "SevenChan" => "qh_xiaochao@163.com" }
   # Or just: s.author    = "SevenChan"
   # s.authors            = { "SevenChan" => "qh_xiaochao@163.com" }
   # s.social_media_url   = "http://twitter.com/SevenChan"
@@ -64,12 +64,13 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  s.platform     = :ios, "6.0"
+  s.platform     = :ios
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
   # s.osx.deployment_target = "10.7"
+  # s.watchos.deployment_target = "2.0"
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -78,19 +79,19 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/Seven-Sun/SSObject.git"}
+  s.source       = { :git => "https://github.com/Seven-Sun/SSObject.git", :tag => "0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  CocoaPods is smart about how it includes source code. For source files
-  #  giving a folder will include any h, m, mm, c & cpp files. For header
-  #  files it will include any header in the folder.
+  #  giving a folder will include any swift, h, m, mm, c & cpp files.
+  #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = “SSObject”, "SSObject/**/*.{h,m,c}”
-  # s.exclude_files = "Classes/Exclude"
+  s.source_files  = "SSObject", "SSObject/**/*.{h,m}"
+  #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -128,7 +129,7 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  s.requires_arc = true
+  # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
